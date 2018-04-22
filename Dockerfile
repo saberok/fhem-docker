@@ -153,6 +153,8 @@ RUN /root/StartAndInitialize.sh initialize /opt/fhem
 
 ## open ports 
 EXPOSE 7072 8083 8084 8085 8086 8087 8088 8089
+## open port for culs
+EXPOSE 2022 2021
 
 ## add volumes
 VOLUME /opt/fhem
