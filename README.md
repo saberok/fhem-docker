@@ -28,11 +28,11 @@ ___
 [![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=L98P3QMZFDHCN)
 ___
 ### Run:
-    docker run -d --name fhem-docker -p 7072:7072 -p 8083:8083 -p 8084:8084 -p 8085:8085 -p 8086:8086 -p 8087:8087 -p 8088:8088 -p 8089:8089 diggewuff/fhem-docker
+    docker run -d --name fhem-docker -p 7072:7072 -p 2020:2020 -p 2021:2021 -p 8083:8083 -p 8084:8084 -p 8085:8085 -p 8086:8086 -p 8087:8087 -p 8088:8088 -p 8089:8089 okleine/fhem-middendorf-okleine
 ___
 ### Run with mapped volume on host:
 
-    docker run -d --name fhem-docker -v /my/host/directory:/opt/fhem -p 7072:7072 -p 8083:8083 -p 8084:8084 -p 8085:8085 -p 8086:8086 -p 8087:8087 -p 8088:8088 -p 8089:8089 diggewuff/fhem-docker
+    docker run -d --name fhem-docker -v /my/host/directory:/opt/fhem -p 7072:7072 -p 2020:2020 -p 2021:2021 -p 8083:8083 -p 8084:8084 -p 8085:8085 -p 8086:8086 -p 8087:8087 -p 8088:8088 -p 8089:8089 okleine/fhem-middendorf-okleine
 
 #### If you are using USB devices, you will need to mapp them to the container via the run command. 
 
